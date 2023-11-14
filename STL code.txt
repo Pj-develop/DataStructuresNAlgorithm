@@ -1,0 +1,18 @@
+replace( start,end,old,new)
+
+replace_if( start,end,func,new)
+
+find( start,end,to find)
+
+find_if( start,end,newfunc)
+
+remove( start,end,to be delted element)
+
+remove_if( start,end,func)
+
+
+
+*max_element(start,end)
+
+*min_element(start,end)
+
