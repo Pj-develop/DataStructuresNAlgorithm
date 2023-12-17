@@ -1,33 +1,24 @@
 #include<iostream>
 using namespace std;
 
-int insertion(int arr[],int s){
-    
-    for(int i=1;i<s;i++){
-        int tmp=arr[i];
-        int j=i-1;
-        while(j>=0 && arr[j]>tmp){
-            arr[j+1]=arr[j];
-            j--;
-        }
-        arr[j+1]=tmp;
-    }
-return 1;
-
-}
-
 int main(){
-    int n=5;
-    int arr[n]={42,21,10,15,13};
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+    int mul=1;
+    string s="135";
+    int size=s.size();
+    for(int i=0;i<s.size();i++){
+        int n=s[i]-'0';
+        cout<<n<<endl;
+        mul*=n;
+
+
     }
-    cout<<endl;
-
-     insertion(arr,n);
-
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-
+    cout<<"ANS : "<<mul;
 }
+
+
+// int main(){
+//     char i;
+//     i ='1';
+//     cout<<(int)i-48;
+//     return 0;
+// }
